@@ -1,0 +1,44 @@
+npm run dev
+
+> mining-purchase-approval-system@1.0.0 dev
+> concurrently "npm run server" "vite"
+
+(node:24468) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[0] 
+[0] > mining-purchase-approval-system@1.0.0 server
+[0] > nodemon server/index.js
+[0]
+[1] Port 5173 is in use, trying another one...
+[1] 
+[1]   VITE v5.4.8  ready in 274 ms
+[1]
+[1]   ➜  Local:   http://localhost:5174/
+[1]   ➜  Network: use --host to expose
+[0] [nodemon] 3.1.10
+[0] [nodemon] to restart at any time, enter `rs`
+[0] [nodemon] watching path(s): *.*
+[0] [nodemon] watching extensions: js,mjs,cjs,json
+[0] [nodemon] starting `node server/index.js`
+[0] 🔄 Attempting to connect to MongoDB...
+[0] 📍 Connection URI: URI loaded from .env
+[0] (node:4400) [MONGOOSE] Warning: Duplicate schema index on {"email":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+[0] (Use `node --trace-warnings ...` to show where the warning was created)
+[0] (node:4400) [MONGOOSE] Warning: Duplicate schema index on {"employeeId":1} foundx: true" and "schema.index()". Please remove the duplicate index definition.        
+[0] (node:4400) [MONGOOSE] Warning: Duplicate schema index on {"requestNumber":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+[0] (node:4400) [MONGOOSE] Warning: Duplicate schema index on {"code":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+[0] (node:4400) [MONGOOSE] Warning: Duplicate schema index on {"code":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+[0] (node:4400) [MONGOOSE] Warning: Duplicate schema index on {"receiptNumber":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+[0] (node:4400) [MONGOOSE] Warning: Duplicate schema index on {"movementNumber":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+[0] ✅ MongoDB Connected Successfully!
+[0] 📊 Database Host: crmprueba-shard-00-01.wozor.mongodb.net
+[0] 📊 Database Name: MinaAprobaciones
+[0] 📊 Connection State: 1
+[0] 🚀 Server running on port 3001
+[0] 📊 Environment: development
+[0] 🔗 API URL: http://localhost:3001/api
+[0] 📦 Warehouse module: ENABLED
+[0] 📡 Socket.IO server initialized
+[1] Browserslist: caniuse-lite is outdated. Please run:
+[1]   npx update-browserslist-db@latest
+[1]   Why you should do it regularly: https://github.com/browserslist/update-db#readme

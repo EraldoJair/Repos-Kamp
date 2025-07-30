@@ -1,0 +1,29 @@
+Roles de Usuario:
+   * technical_field (Técnico de Campo)
+   * supervisor_mantenimiento (Supervisor de Mantenimiento)
+   * jefe_mantenimiento (Jefe de Mantenimiento)
+   * superintendent_operaciones (Superintendente de Operaciones)
+   * gerente_abastecimientos (Gerente de Abastecimientos)
+   * gerente_financiero (Gerente Financiero)
+   * gerente_general (Gerente General)
+   * admin (Administrador)
+
+  ¿Quién puede hacer qué?
+
+
+   * `technical_field`: Puede crear y ver sus propias solicitudes de compra.
+   * `jefe_mantenimiento`, `superintendent_operaciones`, `gerente_financiero`, `gerente_general`, 
+     `admin`: Tienen control total sobre la gestión de usuarios (ver, crear, actualizar, eliminar
+     usuarios; cambiar contraseñas de usuarios).
+   * Cualquier Usuario Autenticado: Puede ver todas las solicitudes de compra (aunque technical_field
+      solo ve las suyas), crear nuevas solicitudes de compra, ver solicitudes de compra individuales,
+      actualizar sus propias solicitudes de compra pendientes, ver almacenes, recibos de almacén
+     pendientes, inventario por almacén, movimientos de inventario y estadísticas del panel de
+     control.
+   * Roles en el `approvalFlow` (por ejemplo, `supervisor_mantenimiento`, `gerente_abastecimientos`, 
+     etc.): Pueden aprobar o rechazar solicitudes de compra en su nivel designado dentro del flujo de
+      aprobación.
+
+  Posible Preocupación de Seguridad:
+  Actualmente, cualquier usuario autenticado puede crear y confirmar recibos de almacén. Esto podría
+  ser demasiado permisivo.
